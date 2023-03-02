@@ -1,7 +1,8 @@
 name: Discord Webhook Notify
-author: rjstone@radix.cc
+author: antony@beyonk.com
 description: >
   Send notifications to Discord using a webhook.
+  Based upon rjstone's dicord-webhook-notify action.
   Works with all execution environments including windows, macos, and linux.
 inputs:
   webhookUrl:
@@ -33,7 +34,7 @@ inputs:
     description: URL to png of discord avatar to use. Default is the GitHub monochrome mark cat logo.
     required: false
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'index.js'
 branding:
   color: orange
